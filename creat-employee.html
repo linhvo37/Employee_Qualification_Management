@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee qualification management</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-main">
+            <div class="container">
+                <nav class="header-nav row align-items-center">
+                    <div class="header-logo col-6">
+                        <a href="#" class="logo-link" title="logo">
+                            <img src="/image/logo.png" alt="Gosei logo">
+                        </a>
+                    </div>
+                    <div class="header-menu col-6">
+                        <ul class="m-0 d-flex justify-content-around align-items-center">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/list-employee.html">List Employees</a></li>
+                            <li><a href="/creat-employee.html">Add Employees</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container p-0 mt-5">
+            <div class="table-employees">
+                <div class="table-title d-flex justify-content-between align-items-center">
+                    <span class="table-title--text">Creat New Employees</span>
+                </div>
+                <div class="table-container">
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="formFirstNameInput" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="formFirstNameInput" placeholder="First Name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="formMiddleNameInput" class="form-label">Middle Name</label>
+                            <input type="text" class="form-control" id="formMiddleNameInput" placeholder="Middle Name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="formLastNameInput" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="formLastNameInput" placeholder="Last Name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="formGenderSelect" class="form-label">Gender</label>
+                            <select class="form-select" id="formGenderSelect">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="formBirthDateInput" class="form-label">Birth Date</label>
+                            <input type="date" class="form-control" id="formBirthDateInput" placeholder="dd/mm/yyyy">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="formEmailInput" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="formEmailInput"
+                                placeholder="gosei@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="formNoteText" class="form-label">Note</label>
+                            <textarea class="form-control" id="formNoteText" rows="4"></textarea>
+                        </div>
+                    </form>
+                    <div class="form-action d-flex align-items-center justify-content-end">
+                        <a href="/list-employee.html" class="btn btn-primary me-2 btn-cancel" type="submit">Cancel</a>
+                        <button class="btn btn-primary btn-submit" type="submit">Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container d-flex align-items-center justify-content-center mt-5">
+            <p class="m-0">Copyright © 2021 GOSEI Vietnam JSC. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
